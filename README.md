@@ -1,0 +1,3 @@
+# cod1r.github.io
+This is my website...to show off what I have learned...
+I guess...probably not going to update a lot because you know...busy learning things.
