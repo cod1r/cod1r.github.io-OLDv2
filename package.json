@@ -1,21 +1,22 @@
 {
   "name": "actualwebsite-v2",
   "version": "1.0.0",
-  "description": "",
-  "main": "\u001b[A\u001b[B",
+  "description": "Jason Ho's website",
+  "main": "index.html",
   "scripts": {
-    "test": "npm test"
+    "test": ""
   },
   "repository": {
     "type": "git",
-    "url": "\u0016https://github.com/cod1r/cod1r.github.io.git"
+    "url": "git+https://github.com/cod1r/cod1r.github.io.git"
   },
   "keywords": [
-    "jason",
-    "ho",
-    "website",
-    "cod1r"
+    "jason"
   ],
   "author": "Jason Ho",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cod1r/cod1r.github.io/issues"
+  },
+  "homepage": "https://github.com/cod1r/cod1r.github.io#readme"
 }
