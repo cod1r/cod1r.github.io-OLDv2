@@ -1,0 +1,21 @@
+{
+  "name": "actualwebsite-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "\u001b[A\u001b[B",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016https://github.com/cod1r/cod1r.github.io.git"
+  },
+  "keywords": [
+    "jason",
+    "ho",
+    "website",
+    "cod1r"
+  ],
+  "author": "Jason Ho",
+  "license": "ISC"
+}
