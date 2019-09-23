@@ -19,7 +19,5 @@
     "url": "https://github.com/cod1r/cod1r.github.io/issues"
   },
   "homepage": "https://github.com/cod1r/cod1r.github.io#readme",
-  "dependencies": {
-    "vue": "^2.6.10"
-  }
+  "dependencies": {}
 }
