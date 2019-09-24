@@ -20,7 +20,7 @@ a, a:visited {
     color: darkcyan;
     padding: 10px 0px 0px 10px;
     display: inline-block;
-    font-size: 4ch;
+    font-size: 32px;
 }
 
 .links {
@@ -28,7 +28,7 @@ a, a:visited {
     display: inline-block;
     width: 50%; 
     font-family: 'Playfair Display', serif;
-    font-size: 10ch;
+    font-size: 16px;
 }
 
 img {
@@ -44,6 +44,6 @@ img {
     width: 50%;
     padding: 150px 20px;
     font-family: 'Playfair Display', serif;
-    font-size: 2em;
+    font-size: 32px;
     word-wrap: break-word;
 }
