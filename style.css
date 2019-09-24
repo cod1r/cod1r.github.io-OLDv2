@@ -34,8 +34,7 @@ a, a:visited {
 img {
     display: inline-block;
     padding: 100px;
-    height: 500px;
-    width: 500px;
+    width: 30%;
     border-radius: 500px;
 }
 
