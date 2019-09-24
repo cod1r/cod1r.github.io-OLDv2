@@ -47,3 +47,12 @@ img {
     font-size: 40px;
     word-wrap: break-word;
 }
+
+@media (max-width: 600px){
+.about {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    word-wrap: break-word;
+    text-align: center;
+}
+}
