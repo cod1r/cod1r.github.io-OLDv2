@@ -40,16 +40,19 @@ img {
 }
 
 .about {
-    float: right;
+    vertical-align: top;
+    display: inline-block;
     width: 50%;
-    padding: 100px 20px;
+    padding: 150px 20px;
     font-family: 'Playfair Display', serif;
     font-size: 40px;
     word-wrap: break-word;
 }
 
 @media (max-width: 700px){
-    .content {
-        text-align: center;
+    .about{
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+        word-wrap: break-word;
     }
 }
