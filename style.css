@@ -25,7 +25,7 @@ a, a:visited {
 
 .links {
     text-align: right;
-    padding-right: 0em;
+    padding-right: 0px;
     display: inline-block;
     width: 50%; 
     font-family: 'Playfair Display', serif;
