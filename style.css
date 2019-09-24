@@ -51,7 +51,9 @@ img {
 
 @media (max-width: 700px){
     .about{
+        display: block;
         font-family: 'Playfair Display', serif;
         font-size: 20px;
+        width: 100%;
     }
 }
