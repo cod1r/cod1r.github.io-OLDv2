@@ -5,18 +5,30 @@
     <meta name="description" content="Jason Ho's Website">
     <meta name="author" content="Jason Ho">
     <meta name="purpose" content="Portfolio">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
-        <h1>{{ message }}</h1>
-    </div>
-    <ul id= "list">
-        <li style="list-style-type: none" v-for='item in items'> 
-            <a style="text-decoration: none;" v-bind:href='item.url'  >{{ item.message }}</a>
-        </li>
-    </ul>
-    
+        <div id="app" class="head">
+                    {{ message }}
+                </div>
+                <div class="placement">    
+                    <ul class="links" id= "list">
+                    <li class="menu" v-for='item in items'> 
+                        <a v-bind:href='item.url'>{{ item.message }}</a>
+                    </li>
+                    </ul>
+                </div>
+        <div>
+            <img src="jasonface.jpg" alt="myface">
+            <div class="about">
+                    <p>I am currently an undergraduate Computer Science student at the University of Houston. I am looking for opportunities to learn 
+                        so I can make
+                        my work impactful.</p>
+            </div>
+        </div>
+
     <script src="home.js"></script>
 
 </body>

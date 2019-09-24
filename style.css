@@ -1,0 +1,49 @@
+li {
+    list-style-type: none;
+}
+
+a, a:visited {
+    text-decoration: none;
+    padding-right: 30px;
+    color: darkcyan;
+}
+
+.menu {
+    float: left;
+}
+
+.head {
+    font-family: 'Playfair Display', serif;
+    color: darkcyan;
+    padding: 10px 0px 0px 10px;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.links {
+    font-family: 'Playfair Display', serif;
+    padding: 10px 0px 0px 10px;
+    font-size: 25px;
+    margin: auto;
+}
+
+.placement {
+    float: right;
+}
+
+img {
+    display: inline-block;
+    padding: 100px;
+    height: 500px;
+    width: 500px;
+    border-radius: 500px;
+}
+
+.about {
+    float: right;
+    width: 50%;
+    padding: 100px 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    word-wrap: break-word;
+}
