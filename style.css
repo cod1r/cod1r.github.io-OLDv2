@@ -53,6 +53,6 @@ img {
     font-family: 'Playfair Display', serif;
     font-size: 40px;
     word-wrap: break-word;
-    text-align: center;
+    float: left;
 }
 }
