@@ -47,19 +47,3 @@ img {
     font-size: 40px;
     word-wrap: break-word;
 }
-
-@media only screen and (device-width: 400px) and (device-height: 800px) and (-webkit-device-pixel-ratio : 3){
-.about {
-    /* display: block; */
-    /* margin: auto; */
-    /* width: 100%;
-    font-family: 'Playfair Display', serif;
-    font-size: 25px;
-    word-wrap: break-word; */
-}
-img {
-    display: block;
-    height: 100px;
-    width: 100px;
-}
-}
