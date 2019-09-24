@@ -3,16 +3,19 @@ li {
 }
 
 a, a:visited {
+    vertical-align: top;
     text-decoration: none;
     padding-right: 30px;
     color: darkcyan;
 }
 
 .menu {
-    float: left;
+    position: relative;
+    float: right;
 }
 
 .head {
+    width: 730px;
     font-family: 'Playfair Display', serif;
     color: darkcyan;
     padding: 10px 0px 0px 10px;
@@ -21,14 +24,11 @@ a, a:visited {
 }
 
 .links {
+    text-align: right;
+    display: inline-block;
+    width: 50%; 
     font-family: 'Playfair Display', serif;
-    padding: 10px 0px 0px 10px;
     font-size: 25px;
-    margin: auto;
-}
-
-.placement {
-    float: right;
 }
 
 img {
