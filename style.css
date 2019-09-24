@@ -48,7 +48,7 @@ img {
     word-wrap: break-word;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 600px){
 .about {
     font-family: 'Playfair Display', serif;
     font-size: 20px;
