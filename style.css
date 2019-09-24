@@ -15,7 +15,7 @@ a, a:visited {
 }
 
 .head {
-    width: 730px;
+    width: 40%;
     font-family: 'Playfair Display', serif;
     color: darkcyan;
     padding: 10px 0px 0px 10px;
@@ -48,3 +48,8 @@ img {
     font-size: 32px;
     word-wrap: break-word;
 }
+@media screen and (max-width: 992px) {
+    .links {
+      float: right;
+    }
+  }
