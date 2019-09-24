@@ -48,7 +48,7 @@ img {
     word-wrap: break-word;
 }
 
-@media screen and (device-width: 375px) and (device-height: 667px){
+@media screen and (max-width: 400px) and (max-height: 800px){
 .about {
     display: block;
     margin: auto;
