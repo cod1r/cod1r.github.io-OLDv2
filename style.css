@@ -51,7 +51,7 @@ img {
 @media only screen and (device-width: 400px) and (device-height: 800px) and (-webkit-device-pixel-ratio : 3){
 .about {
     display: block;
-    margin: auto;
+    /* margin: auto; */
     width: 100%;
     font-family: 'Playfair Display', serif;
     font-size: 25px;
