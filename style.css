@@ -50,6 +50,7 @@ img {
 
 @media screen and (max-width: 600px){
 .about {
+    float: none;
     display: block;
     width: 100%;
     font-family: 'Playfair Display', serif;
