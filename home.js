@@ -10,7 +10,7 @@ var list = new Vue({
     items: [
       {message: 'Github', url: 'https://github.com/cod1r'},
       {message: 'LinkedIn', url: 'https://www.linkedin.com/in/jason-ho-uh/'},
-      {message: 'Resume', url: ''}
+      {message: 'Resume', url: 'Jason Ho RESUME.pdf'}
     ]
   }
 })
