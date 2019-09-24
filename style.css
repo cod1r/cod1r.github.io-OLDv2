@@ -54,4 +54,8 @@ img {
     font-size: 20px;
     word-wrap: break-word;
 }
+img {
+    height: 200px;
+    width: 200px;
+}
 }
