@@ -52,4 +52,16 @@ img {
     .links {
       float: right;
     }
+    img {
+        margin: auto;
+        display: block;
+        width: 60%;
+    }
+    .about {
+        padding-top: 0%;
+        width: 100%;
+        word-wrap: none;
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+    }
   }
