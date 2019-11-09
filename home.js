@@ -29,6 +29,7 @@ var obj = document.getElementsByClassName("about")[0].style.opacity = 1;
 function Contact(){
   t -= .015
   obj = t
+  console.log(obj)
   if (obj < 0){
     clearInterval(set);
   }
