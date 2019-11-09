@@ -4,7 +4,7 @@
   "description": "Jason Ho's website",
   "main": "index.html",
   "scripts": {
-    "test": "index.html"
+    "test": "./index.html"
   },
   "repository": {
     "type": "git",
