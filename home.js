@@ -24,13 +24,13 @@ Vue.component('social-media',{
     ]
   }
 })
-var t = 1
-var obj = document.getElementsByClassName("about")[0].style.opacity = 1;
+document.getElementsByClassName("says")[0].style.opacity = 1;
 function Contact(){
-  t -= .015
-  obj = t
-  console.log(obj)
-  if (obj < 0){
+  document.getElementsByClassName("says")[0].style.opacity -= ".015";
+  console.log(document.getElementsByClassName("says")[0].style.opacity)
+  if (document.getElementsByClassName("says")[0].style.opacity < "0"){
+    document.getElementsByClassName("says")[0].style.visibility = "hidden";
+    document.getElementsByClassName("says")[0].style.display = "none";
     clearInterval(set);
   }
 }
