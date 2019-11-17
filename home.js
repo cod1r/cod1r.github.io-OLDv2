@@ -27,7 +27,6 @@ Vue.component('social-media',{
 document.getElementsByClassName("says")[0].style.opacity = 1;
 function Contact(){
   document.getElementsByClassName("says")[0].style.opacity -= ".035";
-  // console.log(document.getElementsByClassName("says")[0].style.opacity)
   if (document.getElementsByClassName("says")[0].style.opacity < "0"){
     document.getElementsByClassName("says")[0].style.visibility = "hidden";
     document.getElementsByClassName("says")[0].style.display = "none";
@@ -50,7 +49,12 @@ function email() {
     } else {
       op += .025;
       elem.style.opacity = op;
-      console.log(elem.style.opacity);
     }
   }
 } 
+function getInfo(){
+  var name = document.getElementsByName("name")[0].value;
+  var email = document.getElementsByName("email")[0].value;
+  var about = document.getElementsByName("text")[0].value;
+}
+module.exports = name, email, about;

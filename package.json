@@ -19,5 +19,7 @@
     "url": "https://github.com/cod1r/cod1r.github.io/issues"
   },
   "homepage": "https://github.com/cod1r/cod1r.github.io#readme",
-  "dependencies": {}
+  "dependencies": {
+    "mongodb": "^3.3.4"
+  }
 }
