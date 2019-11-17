@@ -53,6 +53,15 @@ img {
     opacity: 1;
     visibility: visible;
 }
+
+.email {
+    margin-top: 45px;
+    margin-left: 100px;
+    display: none;
+    visibility: hidden;
+    height: 30px;
+    font-size: large;
+}
 @media screen and (max-width: 992px) {
     .links {
       float: right;

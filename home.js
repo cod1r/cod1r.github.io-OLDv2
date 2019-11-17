@@ -20,17 +20,37 @@ Vue.component('social-media',{
     items: [
       {item: 'Twitter', url: 'https://twitter.com/cod1r'},
       {item: 'Facebook', url: 'https://www.facebook.com/profile.php?id=100041088257875'},
-      {item: 'Instagram', url: 'https://www.instagram.com/theuhcod1r/'}
+      {item: 'Instagram', url: 'https://www.instagram.com/thejasonho123/'}
     ]
   }
 })
 document.getElementsByClassName("says")[0].style.opacity = 1;
 function Contact(){
-  document.getElementsByClassName("says")[0].style.opacity -= ".015";
-  console.log(document.getElementsByClassName("says")[0].style.opacity)
+  document.getElementsByClassName("says")[0].style.opacity -= ".035";
+  // console.log(document.getElementsByClassName("says")[0].style.opacity)
   if (document.getElementsByClassName("says")[0].style.opacity < "0"){
     document.getElementsByClassName("says")[0].style.visibility = "hidden";
     document.getElementsByClassName("says")[0].style.display = "none";
+    document.getElementsByClassName("email")[0].style.display = "inline-block";
+    document.getElementsByClassName("email")[0].style.visibility = "visible";
+    document.getElementsByClassName("email")[0].style.opacity = "0";
+    var x = email();
     clearInterval(set);
   }
 }
+
+
+function email() {
+  var elem = document.getElementsByClassName("email")[0]; 
+  var op = 0
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (elem.style.opacity >= "1") {
+      clearInterval(id);
+    } else {
+      op += .025;
+      elem.style.opacity = op;
+      console.log(elem.style.opacity);
+    }
+  }
+} 
