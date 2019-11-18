@@ -8,7 +8,7 @@ var list = new Vue({
   el: '#list',
   data: {
     items: [
-      {message: 'Contact', url: 'javascript:var set = setInterval(Contact, 10)'},
+      {message: 'Contact', url: 'javascript:var set = setInterval(Contact, 5)'},
       {message: 'Github', url: 'https://github.com/cod1r'},
       {message: 'LinkedIn', url: 'https://www.linkedin.com/in/jason-ho-uh/'},
       {message: 'Resume', url: 'Jason Ho RESUME.pdf'}
