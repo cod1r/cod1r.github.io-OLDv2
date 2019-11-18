@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+
 </head>
 <body>
         <div id="app" class="head">
@@ -28,6 +29,7 @@
                         so I can make
                         my work impactful.</p>
                         <div class="email">
+                            <form action="/" method="POST">
                             <input class="namo"name="name" type="name" title="Name" placeholder="Full Name">
 
                             <input class="emool"name="email" title="Email" type="email" maxlength="1000" placeholder="Email address...">
@@ -38,13 +40,13 @@
 
                             <br>
 
-                            <a href="javascript:getInfo()" class="submit">Hired?</a>
+                            <input type="submit" class="submit" value="Hired?">
+                            </form>
                         </div>
                     <social-media></social-media>
             </div>
         </div>
-
-    <script src="home.js"></script>
+        <script src="home.js"></script>
 
 </body>
 </html>

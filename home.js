@@ -38,7 +38,6 @@ function Contact(){
   }
 }
 
-
 function email() {
   var elem = document.getElementsByClassName("email")[0]; 
   var op = 0
@@ -52,9 +51,3 @@ function email() {
     }
   }
 } 
-function getInfo(){
-  var name = document.getElementsByName("name")[0].value;
-  var email = document.getElementsByName("email")[0].value;
-  var about = document.getElementsByName("text")[0].value;
-}
-module.exports = name, email, about;
