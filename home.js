@@ -11,7 +11,7 @@ var list = new Vue({
       {message: 'Contact', url: 'javascript:var set = setInterval(Contact, 5)'},
       {message: 'Github', url: 'https://github.com/cod1r'},
       {message: 'LinkedIn', url: 'https://www.linkedin.com/in/jason-ho-uh/'},
-      {message: 'Resume', url: 'Jason Ho RESUME.pdf'}
+      {message: 'Resume', url: "Jason's Resume - 2020.pdf"}
     ]
   }
 })
