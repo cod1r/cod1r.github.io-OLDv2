@@ -2,39 +2,43 @@
 <html lang="en">
 <head>
     <title>Jason Ho</title>
-    <meta name="description" content="Jason Ho's Website">
-    <meta name="author" content="Jason Ho">
-    <meta name="purpose" content="Portfolio">
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 </head>
 <body>
-        <div id="app" class="head">
-                    {{ message }}
+        <div class="clearfix" class="head">
+            <ul class="nav float-left">
+              <li class="nav-item nav-link active"> <h2>Jason Ho</h2> </li>
+            </ul>
+            <ul class="nav float-right">
+              <li class="nav-item">
+                <a class="nav-link active" href="./JasonHosResume2020.pdf"> <h4>Resume</h4> </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.github.com/cod1r"><h4>Github</h4></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/jason-ho-uh"><h4>LinkedIn</h4></a>
+              </li>
+            </ul>
+          </div>
+          <div class="">
+            <div class="row">
+              <div class="col-sm container" style="width:50%; height:50%;">
+                <img class="img-fluid img-thumbnail mx-auto d-block" style=" margin-top: 10%;border-radius:50%;width:50%; height:50%;" src="./jasonface.jpg" alt="Jason Ho">
+              </div>
+              <div class="col-sm container" style="margin-top:7%;">
+                <div class="jumbotron">
+                  <h1 class="display-4">Jason Ho</h1>
+                  <p class="lead">Computer Science student at The University of Houston</p>
+                  <hr class="my-4">
+                  <p>Check out my Github to see what I am working on!</p>
                 </div>
-                <div class="links">
-                    <ul id= "list">
-                    <li class="menu" v-for='item in items'> 
-                        <a v-bind:href='item.url'>{{ item.message }}</a>
-                    </li>
-                    </ul> 
-                </div>
-        <div class="content">
-            <img src="jasonface.jpg" alt="myface">
-            <div class="about">
-                    <p class="says">I am currently an undergraduate Computer Science student at the University of Houston. I am looking for opportunities to learn 
-                        so I can make
-                        my work impactful.</p>
-                        <div class="email">
-                            My email <address>jasonho353@gmail.com</address>
-                        </div>
-                    <social-media></social-media>
+              </div>
             </div>
-        </div>
-        <script src="home.js"></script>
+          </div>
 
+        </div>
 </body>
 </html>
