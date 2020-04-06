@@ -1,4 +1,15 @@
-img {
-  max-width: 100%;
-  height: auto;
+.display{
+  width: 50%;
+  height: 50%;
+  margin-left: 25%;
+}
+
+@keyframes move{
+  from{background-color: white;}
+  to{background-color: lightblue;}
+}
+
+.select:hover{
+  animation: move 2s;
+  background-color: lightblue;
 }
