@@ -1,4 +1,13 @@
-.display{
+.display1{
+  width: 50%;
+  height: 50%;
+  margin-left: 48%;
+  margin-top: 3%;
+  
+}
+
+.display2{
+  margin-top: 5%;
   width: 50%;
   height: 50%;
   margin-left: 25%;
