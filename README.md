@@ -1,3 +1,4 @@
-# cod1r.github.io
-This is my website...to show off what I have learned...
-I guess...probably not going to update a lot because you know...busy learning things.
+# Intro to my Github
+
+This is where my projects starting from college have started.
+I hope to look back one day and realize how far I have grown.
