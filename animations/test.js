@@ -5,11 +5,11 @@ cv.style.position = 'absolute';
 cv.style.left = '0';
 cv.style.top = '0';
 var cvs = cv.getContext('2d');
-var size = 20;
+var size = 40;
 var square = {
     x: null, 
     y: null, 
-    strength: 0,
+    strength: 0
 }
 var grid = [];
 var actual_grid = [];
@@ -20,8 +20,8 @@ for (let y = 0; y < window.innerHeight/size; y ++){
         obj.x = x*size;
         obj.y = y*size;
         grid.push(obj);
-        cvs.strokeRect(x*size, y*size, size, size);
         temp.push(0);
+        cvs.strokeRect(x*size, y*size, size, size);
     }
     actual_grid.push(temp);
 }
@@ -37,16 +37,3 @@ window.addEventListener('click', (event) => {
     }
     );
 })
-
-function tick(){
-    cvs.clearRect(0, 0, cv.width, cv.height);
-    for (let y = 0; y < window.innerHeight/size; y++){
-        for (let x = 0; x < window.innerWidth; x++){
-            cvs.strokeRect(x*size, y*size, size, size);
-        }
-    }
-    // setInterval(tick, 3000);
-    requestAnimationFrame(tick);
-}
-
-// tick();
