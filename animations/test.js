@@ -5,7 +5,7 @@ cv.style.position = 'absolute';
 cv.style.left = '0';
 cv.style.top = '0';
 var cvs = cv.getContext('2d');
-var size = 10;
+var size = 20;
 var square = {
     x: null, 
     y: null, 
