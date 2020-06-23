@@ -58,40 +58,42 @@ function up(){
     var temp = PointAx;
     PointAx = PointAx*Math.cos(radians)+PointAy*Math.sin(radians);
     PointAy = PointAy*Math.cos(radians)-temp*Math.sin(radians);
-    // PointBx = PointBx*Math.floor(Math.cos(radians))+PointBy*Math.sin(radians);
-    // PointBy = PointBy*Math.floor(Math.cos(radians))-PointBx*Math.sin(radians);
     var temp2 = PointCx;
     PointCx = PointCx*Math.cos(radians)+PointCy*Math.sin(radians);
     PointCy = PointCy*Math.cos(radians)-temp2*Math.sin(radians);
-    // PointDx = PointDx*Math.floor(Math.cos(radians))+PointDy*Math.sin(radians);
-    // PointDy = PointDy*Math.floor(Math.cos(radians))-PointDx*Math.sin(radians);
 }
 function down(){
     var temp = PointAx;
     PointAx = PointAx*Math.cos(-radians)+PointAy*Math.sin(-radians);
     PointAy = PointAy*Math.cos(-radians)-temp*Math.sin(-radians);
-    // PointBx = PointBx*Math.cos(-radians)+PointBy*Math.sin(-radians);
-    // PointBy = PointBy*Math.cos(-radians)-PointBx*Math.sin(-radians);
     var temp2 = PointCx;
     PointCx = PointCx*Math.cos(-radians)+PointCy*Math.sin(-radians);
     PointCy = PointCy*Math.cos(-radians)-temp2*Math.sin(-radians);
-    // PointDx = PointDx*Math.cos(-radians)+PointDy*Math.sin(-radians);
-    // PointDy = PointDy*Math.cos(-radians)-PointDx*Math.sin(-radians);
 }
 
 // cannon 
-
+var distance = 12;
 
 function tick(){
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.beginPath();
-    ctx.moveTo(PointAx, PointAy);
+    ctx.moveTo((PointAx)/15+250, (PointAy)/15+775);
     ctx.lineTo(PointBx, PointBy);
-    ctx.moveTo(PointCx, PointCy);
+    ctx.moveTo((PointCx)/14+250, (PointCy)/14+775);
     ctx.lineTo(PointDx, PointDy);
     ctx.stroke();
     ctx.beginPath();
     ctx.arc(250, 775, Math.sqrt(100+55*55), 0, 2*Math.PI);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(0, 0, Math.sqrt(300*300+800*800), 0, 2*Math.PI);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(0, 0, Math.sqrt(100+55*55), 0, 2*Math.PI);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(250, 775);
+    ctx.lineTo(300, 800);
     ctx.stroke();
     requestAnimationFrame(tick);
 }
