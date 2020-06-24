@@ -12,14 +12,14 @@ var radians = Math.PI/180;
 var ms = 20;
 var to;
 var de;
-var PointAx = 300, 
-    PointAy = 800, 
-    PointBx = 500, 
-    PointBy = 700, 
-    PointCx = 260,
-    PointCy = 720,
-    PointDx = 460,
-    PointDy = 620;
+var PointAx = 50, 
+    PointAy = 25, 
+    PointBx = 250, 
+    PointBy = -75, 
+    PointCx = 10,
+    PointCy = -55,
+    PointDx = 210,
+    PointDy = -155;
 
 increase.onmousedown = () =>{   
     to = setInterval(up, ms);
@@ -58,17 +58,35 @@ function up(){
     var temp = PointAx;
     PointAx = PointAx*Math.cos(radians)+PointAy*Math.sin(radians);
     PointAy = PointAy*Math.cos(radians)-temp*Math.sin(radians);
+
     var temp2 = PointCx;
     PointCx = PointCx*Math.cos(radians)+PointCy*Math.sin(radians);
     PointCy = PointCy*Math.cos(radians)-temp2*Math.sin(radians);
+
+    var temp3 = PointBx;
+    PointBx = PointBx*Math.cos(radians)+PointBy*Math.sin(radians);
+    PointBy = PointBy*Math.cos(radians)-temp3*Math.sin(radians);
+
+    var temp4 = PointDx;
+    PointDx = PointDx*Math.cos(radians)+PointDy*Math.sin(radians);
+    PointDy = PointDy*Math.cos(radians)-temp4*Math.sin(radians);
 }
 function down(){
     var temp = PointAx;
     PointAx = PointAx*Math.cos(-radians)+PointAy*Math.sin(-radians);
     PointAy = PointAy*Math.cos(-radians)-temp*Math.sin(-radians);
+
     var temp2 = PointCx;
     PointCx = PointCx*Math.cos(-radians)+PointCy*Math.sin(-radians);
     PointCy = PointCy*Math.cos(-radians)-temp2*Math.sin(-radians);
+
+    var temp3 = PointBx;
+    PointBx = PointBx*Math.cos(-radians)+PointBy*Math.sin(-radians);
+    PointBy = PointBy*Math.cos(-radians)-temp3*Math.sin(-radians);
+
+    var temp4 = PointDx;
+    PointDx = PointDx*Math.cos(-radians)+PointDy*Math.sin(-radians);
+    PointDy = PointDy*Math.cos(-radians)-temp4*Math.sin(-radians);
 }
 
 // cannon 
@@ -77,23 +95,13 @@ var distance = 12;
 function tick(){
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.beginPath();
-    ctx.moveTo((PointAx)/15+250, (PointAy)/15+775);
-    ctx.lineTo(PointBx, PointBy);
-    ctx.moveTo((PointCx)/14+250, (PointCy)/14+775);
-    ctx.lineTo(PointDx, PointDy);
+    ctx.moveTo(PointAx+250, PointAy+775);
+    ctx.lineTo(PointBx+250, PointBy+775);
+    ctx.moveTo(PointCx+250, PointCy+775);
+    ctx.lineTo(PointDx+250, PointDy+775);
     ctx.stroke();
     ctx.beginPath();
     ctx.arc(250, 775, Math.sqrt(100+55*55), 0, 2*Math.PI);
-    ctx.stroke();
-    ctx.beginPath();
-    ctx.arc(0, 0, Math.sqrt(300*300+800*800), 0, 2*Math.PI);
-    ctx.stroke();
-    ctx.beginPath();
-    ctx.arc(0, 0, Math.sqrt(100+55*55), 0, 2*Math.PI);
-    ctx.stroke();
-    ctx.beginPath();
-    ctx.moveTo(250, 775);
-    ctx.lineTo(300, 800);
     ctx.stroke();
     requestAnimationFrame(tick);
 }
